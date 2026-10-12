@@ -74,4 +74,5 @@ async def get_amazon_product_details(url: str) -> dict:
 
 
 if __name__ == "__main__":
-    mcp.run()
+    # mcp.run()   # local
+    mcp.run(transport="http", host="0.0.0.0", port=8000)
